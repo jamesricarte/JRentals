@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Proxima_Nova;
+    src: url(fonts/Proxima\ Nova\ Font.otf);
+}
+
+* {
+    font-family: Proxima_Nova;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.news-and-stories-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.news-and-stories-section  * {
+    color: black;
+}
+
+.news-and-stories-cover {
+    margin-top: 120px;
+    width: 90%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.news-and-stories-cover h1 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.news-and-stories-cover p {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.news-and-stories-cover img {
+    width: 100%;
+    height: 710px;
+    object-fit: cover;
+    object-position: 0 38%;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 550px 550px 550px;
+    column-gap: 30px;
+    row-gap: 25px;
+    margin-top: 80px;
+}
+
+.news-grid div h3 {
+    font-size: 22px;
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.news-grid div p {
+    font-size: 15px;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 24px;
+}
+
+.news-grid div{
+    background-color: rgb(233, 233, 233);
+    width: 550px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.new-grid-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 0% 25%;
+}
+
+.new-grid-image.no2, .new-grid-image.no3 {
+    object-position: 0% 40%;
+}
+
+.news-container {
+    position: relative;
+}
+
+.news-logo {
+    width: 58px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    top: 55%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.news-logo.no3 {
+    box-shadow: white 0px 2px 6px;
+}
+
+.news-and-stories-load-more {
+    color: white;
+    background-color: rgb(255, 119, 0);
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    transition: .4s;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.news-and-stories-load-more:hover {
+    background-color: rgb(227, 133, 0);
+}

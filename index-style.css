@@ -1,0 +1,301 @@
+@font-face {
+    font-family: Proxima_Nova;
+    src: url(fonts/Proxima\ Nova\ Font.otf);
+}
+
+* {
+    font-family: Proxima_Nova;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.homepage-cover {
+    width: 100%;
+    filter: brightness(.5);
+}
+
+.homepage-cover-container {
+    position: relative;
+}
+
+.text-above {
+    position: absolute;
+    text-align: center;
+    top: 38%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    width: 600px;
+    border: 2px solid white;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.text-above h1 {
+    font-size: 120px;
+}
+
+.text-above p {
+    font-size: 22px;
+}
+
+.camera-selection-div img, .lenses-selection-div img, .lighting-selection-div img, .microphone-selection-div img {
+    width: 600px;
+}
+
+.lenses-selection-div {
+    background-color: white;
+}
+
+.lenses-selection-div img {
+    margin-top: 137px;
+}
+
+.microphone-selection-div {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+
+.microphone-selection-div img {
+    margin-top: 73px;
+}
+
+.services-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.grid-div {
+    position: absolute;
+    top: -150px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 50px;
+}
+
+.services-title {
+    position: absolute;
+    top: -250px;
+    font-size: 48px;
+}
+
+.box {
+    position: relative;
+}
+.box img {
+    transition: .5s;
+    cursor: pointer;
+}
+.box img:hover {
+    filter: brightness(.8);
+}
+
+.overlay-description {
+    position: absolute;
+    background-color: rgb(29, 29, 29);
+    bottom: -30px;
+    left: 5%;
+    padding: 25px;
+}
+
+.overlay-description * {
+    color: rgb(255, 255, 255);
+}
+
+.overlay-description h1 {
+    margin-bottom: 10px;
+}
+
+.more-services-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 700px;
+}
+
+.more-services-section button {
+    background-color: rgb(255, 119, 0);
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.more-services-section button:hover {
+    background-color: rgb(214, 125, 0);
+}
+
+.credits-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.credits {
+    width: 90%;
+    height: 90%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits div h1 {
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.credits-posters {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    column-gap: 20px;
+    place-items: center;
+    margin-bottom: 60px;
+}
+
+.credits-posters img {
+    cursor: pointer;
+}
+
+.credits img {
+    width: 400px;
+}
+
+.feedback-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.feedback-section h1 {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.feedback {
+    background-color: grey;
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: 600px 600px 600px;
+    column-gap: 20px;
+    margin: 50px 0;
+}
+
+.feedback-box img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.feedback-box {
+    position: relative;
+}
+
+.feedback-overlay-description {
+    position: absolute;
+    bottom: -20px;
+    right: 2%;
+    background-color: rgb(228, 228, 228);
+    padding: 15px;
+}
+
+.feedback-overlay-description h1{
+    color: grey;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.feedback-overlay-description * {
+    color: grey;
+    font-size: 16px;
+}
+
+.feedback-overlay-description .quotation {
+    font-size: 50px;
+}
+
+.feedback-section button {
+    background-color: rgb(255, 119, 0);
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.feedback-section button:hover {
+    background-color: rgb(214, 125, 0);
+}
+
+.faq-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.faq-section * {
+    color: black;
+}
+
+.faq-section h1 {
+    margin-bottom: 30px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.faq-section .box {
+    border: 2px solid black;
+    width: 300px;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.faq-section .box * {
+    color: black;
+}
+
+.faq-section .box h3 {
+    margin-bottom: 20px
+}

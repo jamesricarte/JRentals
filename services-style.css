@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Proxima_Nova;
+    src: url(fonts/Proxima\ Nova\ Font.otf);
+}
+
+* {
+    font-family: Proxima_Nova;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.services-front-cover img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(.8);
+}
+
+.services-front-cover {
+    position: relative;
+}
+
+.services-front-cover-overlay {
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    width: 45%;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.services-front-cover-overlay * {
+    color: black;
+    padding-left: 100px;
+}
+
+.services-front-cover-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+
+.services-front-cover-overlay p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.services-first-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-first-description * {
+    color: black;
+}
+
+.services-first-description h1 {
+    font-size: 45px;
+    margin-top: 160px;
+    margin-bottom: 30px;
+}
+
+.services-first-description p {
+    width: 52%;
+    font-size: 20px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.camera-rental-service-section * {
+    color: black;
+}
+
+.camera-rental-service-section h1 {
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.camera-rental-service-section p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.camera-rental-service-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.camera-rental-service-2nd-sec {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.camera-rental-service-2nd-sec div{
+    margin: 50px;
+}
+
+.camera-rental-service-2nd-sec .camera-rental-img-container img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+
+    cursor: pointer;
+    transition: 1s;
+}
+
+.camera-rental-service-2nd-sec .camera-rental-img-container .camera-rental-image.lighting {
+    object-position: 24%}
+
+.camera-rental-img-container {
+    position: relative;
+}
+
+.camera-rental-img-container .camera-rental-label {
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    z-index: 20;
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition: 1s;
+}
+
+.camera-rental-service-2nd-sec .camera-rental-img-container:hover .camera-rental-image {
+    filter: brightness(.7);
+}
+
+.camera-rental-service-2nd-sec .camera-rental-img-container:hover .camera-rental-label{
+    opacity: 1;
+}
+
+.other-services-section-info * {
+    color: black;
+}
+
+.other-services-section-info h1 {
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.other-services-section-info p {
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.other-services-section-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.other-services-grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 5px;
+}
+
+.other-services-grid .other-services-image-container img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+
+    cursor: pointer;
+    transition: 1s;
+}
+
+.other-services-grid .other-services-image-container .pa {
+    object-position: left;
+    filter: brightness(.9);
+}
+
+.other-services-grid .other-services-image-container .colorist {
+    object-position: 90%;
+    filter: brightness(.9);
+}
+
+.other-services-image-container {
+    position: relative;
+}
+
+.other-services-image-overlay {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    pointer-events: none;
+}
+
+.other-services-image-overlay h1 {
+    margin-bottom: 10px;
+}
