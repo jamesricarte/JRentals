@@ -123,21 +123,23 @@ body {
     height: 22vh;
     object-fit: cover;
     object-position: 0% 25%;
-    transition: 1s;
 }
 
 .new-grid-image.no2, .new-grid-image.no3 {
     object-position: 0% 40%;
 }
 
-.news-container:hover .new-grid-image{
-    filter: brightness(.75);
+.new-grid-image-container {
+    transition: 1s;
+}
+
+.news-container:hover .new-grid-image-container{
+    filter: brightness(.8);
 }
 
 .news-container:hover .learn-more {
     opacity: 1;
 }
-
 
 .news-container {
     position: relative;
