@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Proxima_Nova;
+    src: url(fonts/Proxima\ Nova\ Font.otf);
+}
+
+* {
+    font-family: Proxima_Nova;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.services-front-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-front-cover-container {
+    width: 90%;
+    margin-top: 120px;
+    height: 50vh;
+}
+
+.services-front-cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 97%;
+    filter: brightness(.9);
+}
+
+.services-front-cover-container {
+    position: relative;
+}
+
+.services-front-cover-overlay {
+    background-color: white;
+    position: absolute;
+    bottom: -.1%;
+    left: 0%;
+    height: 25%;
+    width: 35%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    clip-path: polygon(0% 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+.services-front-cover-container h1 {
+    font-size: 50px;
+    color: black;
+    margin-right: 100px;
+    padding-top: 12px;
+}
+
+.services-first-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-first-description * {
+    color: black;
+}
+
+.services-first-description h1 {
+    font-size: 45px;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+.services-first-description p {
+    width: 52%;
+    font-size: 20px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.camera-rental-service-section * {
+    color: black;
+}
+
+.camera-rental-service-section h1 {
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.camera-rental-service-section p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.camera-rental-service-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.camera-rental-service-2nd-sec {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.camera-rental-service-2nd-sec div{
+    margin: 50px;
+}
+
+.camera-rental-img-container {
+    width: 61vh;
+    height: 51vh;
+}
+
+.camera-rental-service-2nd-sec .info {
+    max-width: 60vh;
+}
+
+.camera-rental-service-2nd-sec .camera-rental-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    cursor: pointer;
+    transition: 1s;
+}
+
+.camera-rental-service-2nd-sec .camera-rental-img-container .camera-rental-image.lighting {
+    object-position: 24%
+}
+
+.camera-rental-img-container {
+    position: relative;
+}
+
+.camera-rental-img-container .camera-rental-label {
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    z-index: 20;
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition: 1s;
+}
+
+.camera-rental-service-2nd-sec .camera-rental-img-container:hover .camera-rental-image {
+    filter: brightness(.7);
+}
+
+.camera-rental-service-2nd-sec .camera-rental-img-container:hover .camera-rental-label{
+    opacity: 1;
+}
+
+.other-services-section-info * {
+    color: black;
+}
+
+.other-services-section-info h1 {
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.other-services-section-info p {
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.other-services-section-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.other-services-grid {
+    display: grid;
+    grid-template-columns: 51vh 51vh;
+    gap: 5px;
+}
+
+.other-services-grid .other-services-image-container img {
+    width: 100%;
+    height: 41vh;
+    object-fit: cover;
+
+    cursor: pointer;
+}
+
+.other-services-grid .other-services-image-container .pa {
+    object-position: left;
+    filter: brightness(.9);
+}
+
+.other-services-grid .other-services-image-container .colorist {
+    object-position: 90%;
+    filter: brightness(.9);
+}
+
+.other-services-image-container {
+    position: relative;
+}
+
+.other-services-image-overlay {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    pointer-events: none;
+}
+
+.other-services-image-overlay h1 {
+    margin-bottom: 10px;
+}
